@@ -22,17 +22,19 @@
 ⫷ [**`Goals`**](https://github.com/Anlominus/Goals) | [**`Studies`**](https://github.com/Anlominus/Studies) | [**`HacKing`**](https://github.com/Anlominus/HacKing) | [**`AnyTeam`**](https://github.com/Anlominus/AnyTeam) ⫸
 <br>
 
+
+---
+
+[**`Tools`**](https://github.com/Anlominus/Privilege-Escalation/tree/main/GiTools#linux-privesc--gitools) | [**`Cheat Sheets`**](https://github.com/Anlominus/Privilege-Escalation/tree/main/Cheat%20Sheets#linux-privesc--cheat-sheets) | [`Notes`](./Notes)  | [`Checklists`](./Checklists)
+
 </div>
   
 ---
   
 <div align="center">
 
-# [`Privilege-Escalation`](https://github.com/Anlominus/Privilege-Escalation)
-[**`Linux-PrivEsc`**](https://github.com/Anlominus/Linux-PrivEsc) | [**`Windows-PrivEsc`**](https://github.com/Anlominus/Windows-PrivEsc)
-
-[**`Tools`**](https://github.com/Anlominus/Privilege-Escalation/tree/main/GiTools#linux-privesc--gitools) | [**`Cheat Sheets`**](https://github.com/Anlominus/Privilege-Escalation/tree/main/Cheat%20Sheets#linux-privesc--cheat-sheets) | [`Notes`](./Notes)  | [`Checklists`](./Checklists)
-  
 </div>
 
----
+# [`Privilege-Escalation`](https://github.com/Anlominus/Privilege-Escalation)
+- [**`Linux-PrivEsc`**](https://github.com/Anlominus/Linux-PrivEsc)
+- [**`Windows-PrivEsc`**](https://github.com/Anlominus/Windows-PrivEsc)
