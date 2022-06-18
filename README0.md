@@ -17,7 +17,7 @@
 ### 1️⃣ ~ [`KoTH`](./KoTH) ~> TryHackMe VPN
 > Simple helper script for VPN, VM's, etc
 ```shell
-wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/King%20of%20the%20Hill/KoTH/KoTH ; chmod +x KoTH
+wget https://raw.githubusercontent.com/Anlominus/KoTH/main/KoTH; chmod +x KoTH; ./KoTH
 ```
 
 ---
@@ -25,14 +25,14 @@ wget https://raw.githubusercontent.com/Anlominus/TryHackMe/main/King%20of%20the%
 ### 2️⃣ ~ [`KoTH-Protection`](./KoTH-Protection) ~> Protecting Rank in King of The Hill
 > A script to protect your king
 ```shell
-wget https://github.com/Anlominus/TryHackMe/blob/main/King%20of%20the%20Hill/KoTH/KoTH-Protection ; chmod +x KoTH-Protection
+wget https://raw.githubusercontent.com/Anlominus/KoTH/main/KoTH-Protection ; chmod +x KoTH-Protection; ./KoTH-Protection
 ```
 
 ---
 
 ### 3️⃣ ~ [`KoTh-Hidding`](./KoTh-Hidding) ~> A simple script to hide a process with mount
 ```shell
-wget https://github.com/Anlominus/TryHackMe/blob/main/King%20of%20the%20Hill/KoTH/KoTh-Hidding; && chmod +x KoTh-Hidding
+wget https://raw.githubusercontent.com/Anlominus/KoTH/main/KoTH-Hidding; && chmod +x KoTh-Hidding; ./KoTh-Hidding
 ```
 > - Start local server <br>
 >   - `python3 -m http.server 80` <br>
