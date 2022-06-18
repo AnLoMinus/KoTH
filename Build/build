@@ -1,0 +1,41 @@
+#!/bin/sh
+#!/bin/bash
+#!/usr/bin/bash
+#!/usr/bin/env bash
+#!/data/data/com.termux/files/usr/bin/bash
+###############################################
+# Name : Anlominus ~ KoTH
+# Last UPDATE : 2022 Jun 19
+# Create Date : 2022 Jun 10
+# Skils: Best Copywriter IN the COSMOS!
+# Location: Made With LOVE IN ISRAEL !
+# Aouther: Anlominus ~> RhytMix ~> KoTH
+# CREDIT: To All World Creators free Scripts & Tools
+# Source: [ https://github.com/Anlominus/KoTH/Build ]
+# Description: TryHackMe - Simple helper script for VPN, VM's, etc
+# BIG THANX TO ALL COMUNITY THAT SHARE ALL THAT FREE GREAT SCRIPTS
+###############################################
+
+#
+echo "\n\t\t Adding 1-Header\n"
+cat 1-Header >> KoTH
+sleep 1
+#
+echo "\n\t\t Adding 2-Variables\n"
+cat 2-Variables >> KoTH
+sleep 1
+#
+echo "\n\t\t Adding 3-Banner\n"
+cat 3-Banner >> KoTH
+sleep 1
+#
+echo "\n\t\t Adding 4-Functions\n"
+cat 4-Functions >> KoTH
+sleep 1
+#
+echo "\n\t\t ✅ Done ! \n"
+sleep 1
+#
+echo "\n\t\t 🔶 Starting KoTH ! \n"
+sleep 1
+chmod +x KoTH; ./KoTH

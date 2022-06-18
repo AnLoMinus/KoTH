@@ -1,0 +1,14 @@
+koth_banner(){
+  #statements
+  echo "
+$LYellow \t\t █████   ████${BYellow}          ███████████${DGrey} █████   █████
+$LYellow \t\t░░███   ███░ ${BYellow}         ░█░░░███░░░█${DGrey}░░███   ░░███
+$LYellow \t\t ░███  ███   ${BYellow}  ██████ ░   ░███  ░ ${DGrey} ░███    ░███
+$LYellow \t\t ░███████    ${BYellow} ███░░███    ░███    ${DGrey} ░███████████
+$LYellow \t\t ░███░░███   ${BYellow}░███ ░███    ░███    ${DGrey} ░███░░░░░███
+$LYellow \t\t ░███ ░░███  ${BYellow}░███ ░███    ░███    ${DGrey} ░███    ░███
+$LYellow \t\t █████ ░░████${BYellow}░░██████     █████   ${DGrey} █████   █████
+$LYellow \t\t░░░░░   ░░░░ ${BYellow} ░░░░░░     ░░░░░    ${DGrey}░░░░░   ░░░░░
+                                                      "
+}
+koth_banner

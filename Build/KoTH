@@ -5,7 +5,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 ###############################################
 # Name : Anlominus ~ KoTH
-# Last UPDATE : 2022 Jun 13
+# Last UPDATE : 2022 Jun 19
 # Create Date : 2022 Jun 10
 # Description: TryHackMe - Simple helper script for VPN, VM's, etc
 # Skils: Best Copywriter IN the COSMOS!
@@ -16,8 +16,6 @@
 # Aouther: f11snipe +~> Anlominus ~> RhytMix ~> KoTH
 # TryHackMe ~> King of The Hill: https://tryhackme.com/games/koth
 ###############################################
-clear
-
 KoTHColors(){
 ##############################################################################
 # COLORS AND BACKGROUNDS
@@ -43,7 +41,6 @@ LYellow='\033[0;93m' # Ligth Yellow
 LBlue='\033[0;94m'   # Ligth Blue
 LPurple='\033[0;95m' # Light Purple
 LCyan='\033[0;96m'   # Ligth Cyan
-
 
 # Bold
 BBlack='\033[1;30m'  # Black
@@ -76,7 +73,6 @@ On_Cyan='\033[46m'   # Cyan
 On_White='\033[47m'  # White
 }
 KoTHColors
-
 koth_banner(){
   #statements
   echo "
@@ -91,7 +87,6 @@ $LYellow \t\t░░░░░   ░░░░ ${BYellow} ░░░░░░     �
                                                       "
 }
 koth_banner
-
 AnonMainMenu(){
   while true; do
   #statements
@@ -169,6 +164,7 @@ ${BCyan}            └──╼ ")
     esac
   done
 }
+
 MainMenu(){
   while true; do
   #statements
@@ -459,44 +455,3 @@ ${BCyan}            └──╼ ")
   done
 }
 MainMenu
-
-
-# if [ "$arg1" == "kill" ]; then
-#   if [ "$vpn_running" == "0" ]; then
-#     log "Found running openvpn process(es):"
-#     ps aux | grep "$vpn_file" | grep -v grep
-#
-#     if confirmYes "Kill all process(es)?"; then
-#       sudo pkill -f "$vpn_file"
-#       sudo pkill grep
-#
-#       if [ "$?" == "0" ]; then
-#         log "They're ... all ... dead 🤥"
-#         exit 0
-#       else
-#         error "EPIC FAIL"
-#       fi
-#     else
-#       warn "Aborting 'kill' command"
-#     fi
-#   fi
-# elif [ "$arg1" == "log" ]; then
-#   cat $session_log
-#   log "This sesion log file is located: $session_log"
-# elif [ $arg1 -e $valid_ip ]; then
-#   connectVpn
-#   if confirmYes "Update profile with VMIP=$arg1  "; then
-#     res=$(cat $profile_file | sed -e "s/VMIP=\(.*\)\( \#.*\)/VMIP=$arg1/g" | grep VMIP)
-#     log "Editing $profile_file: $res"
-#     sed -i'.bak' -e "s/VMIP=\(.*\)/VMIP=$arg1/g" $profile_file
-#     log "Run: 'source $profile_file' (to reload this session, new terminals will have \$VMIP set automatically)"
-#   else
-#     warn "Aborting new vm session"
-#   fi
-#
-#   if [ $arg2 =~ $valid_thm ]; then
-#     warn "ADD AS HOST [/etc/hosts]: $arg1    $arg2"
-#   fi
-# else
-#   connectVpn
-# fi
