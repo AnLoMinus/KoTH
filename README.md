@@ -74,3 +74,15 @@ wget https://raw.githubusercontent.com/Anlominus/KoTH/main/KoTH-Hidding; && chmo
     - [ ] Asking For Username:
 
 ---
+
+## Index of Machine Covered:
+-  [Food](#machine-name-food)
+-  [Shrek](#machine-name-shrek)
+-  [SpaceJam](#machine-name-space-jam)
+-  [Fortune](#machine-name-fortune)
+-  [Production](#machine-name-production)
+-  [Lion](#machine-name-lion)
+-  [Hackers](https://github.com/holmes-py/King-of-the-hill/blob/master/Writeup%20for%20Hackers%2001.md)
+
+
+---
