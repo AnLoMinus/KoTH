@@ -55,23 +55,17 @@ wget https://raw.githubusercontent.com/Anlominus/KoTH/main/KoTH-Hidding; && chmo
 
 ---
 
-- [x] Start
   - [ ] 1️⃣ Adding ${box_ip} ${box_name} ~>> /etc/hosts
     - `sudo echo "${box_ip}   ${box_name}" >> /etc/hosts`  
   - [ ] 2️⃣ Asking For TryHackMe VPN File Location:
-  - [ ] 3️⃣ Asking Data for Reporting:
+  - [ ] 3️⃣ Asking Location for Reporting:
 
 ---
 
-- [x] Stop
-    - [ ] anonsurf status
-    - [ ] anonsurf start
-    - [ ] anonsurf stop
-
----
-
-- [x] Status
-    - [ ] Asking For Username:
+- [x] Anonymity Surfing
+    - [x] anonsurf status
+    - [x] anonsurf start
+    - [x] anonsurf stop
 
 ---
 
@@ -86,3 +80,4 @@ wget https://raw.githubusercontent.com/Anlominus/KoTH/main/KoTH-Hidding; && chmo
 
 
 ---
+
