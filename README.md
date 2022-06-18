@@ -76,12 +76,12 @@ wget https://raw.githubusercontent.com/Anlominus/KoTH/main/KoTH-Hidding; && chmo
 ---
 
 ## Index of Machine Covered:
--  [Food](#machine-name-food)
--  [Shrek](#machine-name-shrek)
--  [SpaceJam](#machine-name-space-jam)
--  [Fortune](#machine-name-fortune)
--  [Production](#machine-name-production)
--  [Lion](#machine-name-lion)
+-  [Food](./README-Cheatsheets.md#machine-name-food)
+-  [Shrek](./README-Cheatsheets.md#machine-name-shrek)
+-  [SpaceJam](./README-Cheatsheets.md#machine-name-space-jam)
+-  [Fortune](./README-Cheatsheets.md#machine-name-fortune)
+-  [Production](./README-Cheatsheets.md#machine-name-production)
+-  [Lion](./README-Cheatsheets.md#machine-name-lion)
 -  [Hackers](https://github.com/holmes-py/King-of-the-hill/blob/master/Writeup%20for%20Hackers%2001.md)
 
 
