@@ -153,19 +153,25 @@ ${BCyan}            └──╼ ")
     read -p "$KoTHMenuMain" cmd
     case $cmd in
       lpe|LPE )
-      echo "${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} 🔶 Cloning Linux-PrivEsc"
+      mkdir Privilege-Escalation
+      cd Privilege-Escalation
+      mkdir LPE
+      cd LPE
+      echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} 🔶 Downloading ${BGreen}linpeas_base.sh\n${BBlue}"
+      wget https://raw.githubusercontent.com/Anlominus/HacKingPro/main/Menu/14--Privilege%20Enumeration%20%26%20Escalation/Enumeration/linpeas_base.sh
       sleep 1
-      git clone https://github.com/Anlominus/Linux-PrivEsc
-      cd Linux-PrivEsc
-      echo "${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} 🔶 Downloading Linux-PrivEsc GiTools"
+      echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} 🔶 Downloading ${BGreen}linuxallenum.sh\n${BBlue}"
+      wget https://raw.githubusercontent.com/Anlominus/HacKingPro/main/Menu/14--Privilege%20Enumeration%20%26%20Escalation/Enumeration/linuxallenum.sh
       sleep 1
-      sh GiTools/GiTools
+      echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} 🔶 Downloading ${BGreen}lse.sh\n${BBlue}"
+      wget https://raw.githubusercontent.com/Anlominus/HacKingPro/main/Menu/14--Privilege%20Enumeration%20%26%20Escalation/Enumeration/lse.sh
       sleep 1
-      cd Linux-PrivEsc-GiTools
-      echo "${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} ✅ All Downloaded Linux-PrivEsc GiTools"
+      echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} ✅ ${BGreen}All Downloaded Linux-PrivEsc GiTools\n"
+      echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} ✅ ${BGreen}Current Directory: $(pwd)\n"
       sleep 1
-      ls -lahs
-      sleep 3
+      ls -l1
+      sleep 5
+      read -p " Press Enter" some
       ;;
       wpe|WPE )
       echo "${BRed}[${LGrey}WPE${BRed}]${BBlue} -${DGrey} Windows-PrivEsc"
