@@ -164,7 +164,7 @@ ${BCyan}            └──╼ ")
       cd Linux-PrivEsc-GiTools
       echo "${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} ✅ All Downloaded Linux-PrivEsc GiTools"
       sleep 1
-      ls -lahs 
+      ls -lahs
       sleep 3
       ;;
       wpe|WPE )
@@ -252,26 +252,11 @@ ${BCyan}            └──╼ ")
       echo "#### Date: `date`" >> ${targetLogNAME}-KoTH-Log.md
       echo " " >> ${targetLogNAME}-KoTH-Log.md
       echo "---" >> ${targetLogNAME}-KoTH-Log.md
-      echo " " >> ${targetLogNAME}-KoTH-Log.md
-      echo "# 📜 Menu
-
-      [a] - Anonymity Surfing
-      [1] - Planning and Scoping
-      [2] - Reconnaissance & Vulnerability Assessment
-      [3] - Gaining Access & Maintaining Access
-      [4] - Covering tracks
-      [5] - Analysis & Reporting
-
-      ┌──[ Anlominus 👽 KoTH $~]
-      └──╼
-      " >> ${targetLogNAME}-KoTH-Log.md
-      echo " " >> ${targetLogNAME}-KoTH-Log.md
-      echo "---" >> ${targetLogNAME}-KoTH-Log.md
       #  [1] - Planning and Scoping
-      echo "#### Date: `date`" >> ${targetLogNAME}-KoTH-Log.md
       echo " " >> ${targetLogNAME}-KoTH-Log.md
       echo "\n\t\t\t# [1] Creating - Planning and Scoping Report "
       echo "# [1] - Planning and Scoping " >> ${targetLogNAME}-KoTH-Log.md
+      echo "#### Date: `date`" >> ${targetLogNAME}-KoTH-Log.md
       echo "### Planning Log $targetIP: " >> ${targetLogNAME}-KoTH-Log.md
       echo " " >> ${targetLogNAME}-KoTH-Log.md
       echo "---" >> ${targetLogNAME}-KoTH-Log.md
