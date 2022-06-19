@@ -157,17 +157,32 @@ ${BCyan}            └──╼ ")
       cd Privilege-Escalation
       mkdir LPE
       cd LPE
-      echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} 🔶 Downloading ${BGreen}linpeas_base.sh\n${BBlue}"
-      wget https://raw.githubusercontent.com/Anlominus/HacKingPro/main/Menu/14--Privilege%20Enumeration%20%26%20Escalation/Enumeration/linpeas_base.sh
       sleep 1
-      echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} 🔶 Downloading ${BGreen}linuxallenum.sh\n${BBlue}"
-      wget https://raw.githubusercontent.com/Anlominus/HacKingPro/main/Menu/14--Privilege%20Enumeration%20%26%20Escalation/Enumeration/linuxallenum.sh
+      if [ -e linpeas_base.sh ]; then
+        #statements
+        echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} ✅ Found ${BGreen}linpeas_base.sh\n${BBlue}"
+      else
+        echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} 🔶 Downloading ${BGreen}linpeas_base.sh\n${BBlue}"
+        wget https://raw.githubusercontent.com/Anlominus/HacKingPro/main/Menu/14--Privilege%20Enumeration%20%26%20Escalation/Enumeration/linpeas_base.sh
+      fi
+      if [ -e linuxallenum.sh ]; then
+        #statements
+        echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} ✅ Found ${BGreen}linuxallenum.sh\n${BBlue}"
+      else
+        echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} 🔶 Downloading ${BGreen}linuxallenum.sh\n${BBlue}"
+        wget https://raw.githubusercontent.com/Anlominus/HacKingPro/main/Menu/14--Privilege%20Enumeration%20%26%20Escalation/Enumeration/linuxallenum.sh
+      fi
       sleep 1
-      echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} 🔶 Downloading ${BGreen}lse.sh\n${BBlue}"
-      wget https://raw.githubusercontent.com/Anlominus/HacKingPro/main/Menu/14--Privilege%20Enumeration%20%26%20Escalation/Enumeration/lse.sh
+      if [ -e lse.sh ]; then
+        #statements
+        echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} ✅ Found ${BGreen}lse.sh\n${BBlue}"
+      else
+        echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} 🔶 Downloading ${BGreen}lse.sh\n${BBlue}"
+        wget https://raw.githubusercontent.com/Anlominus/HacKingPro/main/Menu/14--Privilege%20Enumeration%20%26%20Escalation/Enumeration/lse.sh
+      fi
       sleep 1
       echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} ✅ ${BGreen}All Downloaded Linux-PrivEsc GiTools\n"
-      echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} ✅ ${BGreen}Current Directory: $(pwd)\n"
+      echo "\n${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} ✅ ${BGreen}Current Directory: \n$(pwd)\n"
       sleep 1
       ls -l1
       sleep 5
