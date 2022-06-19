@@ -153,13 +153,24 @@ ${BCyan}            └──╼ ")
     read -p "$KoTHMenuMain" cmd
     case $cmd in
       lpe|LPE )
-      echo "${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} Linux-PrivEsc"
-      anonsurf status
+      echo "${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} 🔶 Cloning Linux-PrivEsc"
       sleep 1
+      git clone https://github.com/Anlominus/Linux-PrivEsc
+      cd Linux-PrivEsc
+      echo "${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} 🔶 Downloading Linux-PrivEsc GiTools"
+      sleep 1
+      sh GiTools/GiTools
+      sleep 1
+      cd Linux-PrivEsc-GiTools
+      echo "${BRed}[${LGrey}LPE${BRed}]${BBlue} -${DGrey} ✅ All Downloaded Linux-PrivEsc GiTools"
+      sleep 1
+      ls -lahs 
+      sleep 3
       ;;
       wpe|WPE )
       echo "${BRed}[${LGrey}WPE${BRed}]${BBlue} -${DGrey} Windows-PrivEsc"
-      anonsurf start
+      sleep 1
+      git clone https://github.com/Anlominus/Windows-PrivEsc
       sleep 1
       ;;
       x )
@@ -459,6 +470,7 @@ ${BCyan}            └──╼ ")
   done
 }
 MainMenu
+
 
 
 # if [ "$arg1" == "kill" ]; then
