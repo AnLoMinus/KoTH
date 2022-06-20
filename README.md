@@ -68,16 +68,3 @@ wget https://raw.githubusercontent.com/Anlominus/KoTH/main/KoTH-Hidding; && chmo
     - [x] anonsurf stop
 
 ---
-
-## Index of Machine Covered:
--  [Food](./README-Machines.md#machine-name-food)
--  [Shrek](./README-Machines.md#machine-name-shrek)
--  [SpaceJam](./README-Machines.md#machine-name-space-jam)
--  [Fortune](./README-Machines.md#machine-name-fortune)
--  [Production](./README-Machines.md#machine-name-production)
--  [Lion](./README-Machines.md#machine-name-lion)
--  [Hackers](https://github.com/holmes-py/King-of-the-hill/blob/master/Writeup%20for%20Hackers%2001.md)
-
-
----
-
