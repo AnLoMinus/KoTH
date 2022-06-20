@@ -104,6 +104,11 @@ AnonMainMenu(){
           ${BRed}[${LGrey}2${BRed}]${BBlue} -${DGrey} Anonimity Surfing start
           ${BRed}[${LGrey}3${BRed}]${BBlue} -${DGrey} Anonimity Surfing stop
 
+          ${BBlue}[${BRed}#${BBlue}] 📜 ${BYellow} Network Manager Menu
+
+          ${BRed}[${LGrey}4${BRed}]${BBlue} -${DGrey} ifconfig -a
+          ${BRed}[${LGrey}5${BRed}]${BBlue} -${DGrey} ip a
+
           ${BRed}[${LGrey}x${BRed}]${BWhite} -${DGrey} Exit / Quit / Close
 
 
@@ -186,13 +191,18 @@ ${BCyan}            └──╼ ")
       sleep 1
       ls -l1
       sleep 5
+      echo " "
       read -p " Press Enter" some
       ;;
       wpe|WPE )
       echo "${BRed}[${LGrey}WPE${BRed}]${BBlue} -${DGrey} Windows-PrivEsc"
-      sleep 1
-      git clone https://github.com/Anlominus/Windows-PrivEsc
-      sleep 1
+      read_ifconfig="$(ifconfig)"
+      echo "$read_ifconfig"
+      sleep 3
+      echo " "
+      # sleep 1
+      # git clone https://github.com/Anlominus/Windows-PrivEsc
+      # sleep 1
       ;;
       x )
       clear
@@ -204,6 +214,7 @@ ${BCyan}            └──╼ ")
 MainMenu(){
   while true; do
   #statements
+  tryhackmeVpnIP=$(ifconfig tun0)
   clear
   koth_banner
   KoTHMenuMain=$(echo "${BRed}
