@@ -92,6 +92,10 @@ $LYellow \t\t░░░░░   ░░░░ ${BYellow} ░░░░░░     �
 }
 koth_banner
 
+installingONSystem(){
+cp KoTH  /usr/local/bin/KoTH
+}
+
 AnonMainMenu(){
   while true; do
   #statements
@@ -232,6 +236,8 @@ MainMenu(){
           ${BRed}[${LGrey}4${BRed}]${BBlue} -${DGrey} Covering tracks
           ${BRed}[${LGrey}5${BRed}]${BBlue} -${DGrey} Analysis & Reporting
 
+          ${BRed}[${BBlue}i${BRed}]${BBlue} -${BBlue} Installing KoTH on The System
+
           ${BRed}[${LGrey}x${BRed}]${BWhite} -${DGrey} Exit / Quit / Close
 
 
@@ -239,6 +245,9 @@ ${BCyan}            ┌──${BBlue}[${BBlue} Anlominus 👽${BRed} KoTH ${BCya
 ${BCyan}            └──╼ ")
     read -p "$KoTHMenuMain" cmd
     case $cmd in
+      i )
+      installingONSystem
+      ;;
       a )
       AnonMainMenu
       ;;
