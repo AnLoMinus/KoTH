@@ -225,7 +225,7 @@ MainMenu(){
           ${BBlue}[${BRed}#${BBlue}] 📜 Menu
 
           ${BBlue}[${BRed}#${BBlue}] 📜 VPN IP: ${BRed}${tryhackmeVpnIP}
-          ${BBlue}[${BRed}#${BBlue}] 📜 KoTH IP: ${BRed}${targetIP}
+          ${BBlue}[${BRed}#${BBlue}] 📜 KoTH Target IP: ${BRed}${targetIP}
           ${BBlue}[${BRed}#${BBlue}] 📜 Target Log Name: ${BRed}${targetLogNAME}
           ${BBlue}[${BRed}#${BBlue}] 📜 TryHackMe UserName: ${BRed}${username}
 
@@ -409,6 +409,8 @@ ${BCyan}            └──╼ ")
         echo "\n\n\t\t  $cyan $(ifconfig tun0) \n"
         echo "\n\n\t\t  $cyan $(ps aux | grep $vpn_file) \n"
       }
+      echo "      ${BBlue}[${BRed}#${BBlue}] 🔶 Adding $targetIP ${targetLogNAME} to /etc/hosts ${BRed}${tryhackmeVpnIP}"
+      echo "$targetIP    ${targetLogNAME}.thm" | sudo tee -a /etc/hosts
 
       # Check if openvpn connection is running
       ifconfig tun0
