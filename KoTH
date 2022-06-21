@@ -271,14 +271,13 @@ ${BCyan}            └──╼ ")
       #
       file="${targetLogNAME}-KoTH-Log.md"
       if [ -e ${file} ]; then
-        t2="$(echo "\n  ${BBlue}[${BRed}!${BBlue}] File Exist! Remove it? [yY/nN]: ")"
+        t2="$(echo "\n\t\t${BBlue}[${BRed}!${BBlue}]${BRed} - File Exist! Remove it? [yY/nN]: ")"
         read -p "$t2 " filexist
         case $filexist in
           y|Y)
           echo "  ${BBlue}[${BRed}!${BBlue}] Removing {${targetLogNAME}-KoTH-Log.md} file .."
           rm ${targetLogNAME}-KoTH-Log.md
           clear
-          exit
           ;;
           n|N)
           echo "  ${BBlue}[${BRed}!${BBlue}] Leaving {${targetLogNAME}-KoTH-Log.md} file and Add to it .."
@@ -295,15 +294,21 @@ ${BCyan}            └──╼ ")
       echo "---" >> ${targetLogNAME}-KoTH-Log.md
       #  [1] - Planning and Scoping
       echo " " >> ${targetLogNAME}-KoTH-Log.md
-      echo "\n\t\t\t# [1] Creating - Planning and Scoping Report "
       echo "# [1] - Planning and Scoping " >> ${targetLogNAME}-KoTH-Log.md
       echo "#### Date: `date`" >> ${targetLogNAME}-KoTH-Log.md
-      echo "### Planning Log $targetIP: " >> ${targetLogNAME}-KoTH-Log.md
+      echo "### Planning Log for $targetIP: " >> ${targetLogNAME}-KoTH-Log.md
+      echo "
+      - 📜 VPN IP: ${tryhackmeVpnIP}
+      - 📜 KoTH Target IP: ${targetIP}
+      - 📜 Target Log Name: ${targetLogNAME}
+      - 📜 TryHackMe UserName: ${username}
+      " >> ${targetLogNAME}-KoTH-Log.md
+
       echo " " >> ${targetLogNAME}-KoTH-Log.md
       echo "---" >> ${targetLogNAME}-KoTH-Log.md
 
       # Define variable for THM username
-      read_username=$(echo "\n\t\t $yellow Enter Your User Name:$DGrey ")
+      read_username=$(echo "\n\t\t${BBlue}[${BRed}?${BBlue}]${BGreen} - What Your User Name on TryHackMe: ${BRed} ")
       read -p "$read_username" Alm
       if [ -z $Alm ]; then
         #statements
@@ -315,10 +320,11 @@ ${BCyan}            └──╼ ")
       vpn_dir="$HOME/.thm/.vpn"
       if [ -d /$HOME/.thm/.vpn ]; then
         #statements
-        echo "\n\t\t $LGreen VPN Location exists ~>: $DGrey  $vpn_dir  \n"
+        echo "\n\t\t${BBlue}[${BRed}!${BBlue}]${BGreen} - Found!  TryHackme VPN Path Location exists ! ~>: $DGrey  $vpn_dir  \n"
         ls -lahs $vpn_dir
       else
-        echo "\n\t\t $LGreen Creating .vpn Folder In $vpn_dir Directory\n"
+        echo "\n\t\t${BBlue}[${BRed}!${BBlue}]${BGreen} - Creating .vpn Folder In $vpn_dir Directory\n ${BRed} "
+        mkdir $HOME/.thm/
         mkdir $HOME/.thm/.vpn
         ls -lahs $vpn_dir
       fi
@@ -327,12 +333,18 @@ ${BCyan}            └──╼ ")
       vpn_file="$vpn_dir/$username.ovpn"
       if [ -e $vpn_file ]; then
         #statements
-        echo "\n\t\t $LGreen Found TryHackme VPN File ~>: $DGrey  $vpn_file  \n"
+        echo "\n\t\t${BBlue}[${BRed}!${BBlue}]${BGreen} - Found TryHackme VPN File ~>: $DGrey  $vpn_file  \n"
       else
-        cant_found=$(echo "\n\t\t $BRed Can't Found TryHackme VPN File !! \n\n\t\t  Enter $username.ovpn Location ~>: ")
+        cant_found=$(echo "\n\t\t${BBlue}[${BRed}!${BBlue}]${BRed} - Sorry Can't Found TryHackme VPN File !! \n\n\t\t  Enter $username.ovpn Location ~>: ")
         read -p "$cant_found"  this_location
-        echo "\n\t\t $LGreen Found TryHackme VPN File ~>: $DGrey  $this_location\n\t\t $BRed Moving To $vpn_dir/"
-        mv $this_location $vpn_file
+        if [ -e $this_location ]; then
+          #statements
+          echo "\n\t\t${BBlue}[${BRed}!${BBlue}]${BGreen} - Found TryHackme VPN File ~>: $DGrey  $this_location $BRed Copying To $vpn_dir/\n"
+          cp $this_location $vpn_file
+          ls -lahs $vpn_dir
+        else
+          echo "\n\t\t${BBlue}[${BRed}!${BBlue}]${BRed} - Sorry Can't Found TryHackme VPN File !! Maybe you dont have it?"
+        fi
       fi
       # Regex pattern to validate IP format (#.#.#.#)
       valid_ip="([0-9]{1,3}\.){3}"
@@ -340,7 +352,7 @@ ${BCyan}            └──╼ ")
 
       # Session logfile
       session_log=$vpn_dir/.logs/KoTH-$(date).log
-      echo "\n\t\t $LGreen Session logfile ~>: $DGrey $session_log\n"
+      echo "\n\t\t${BBlue}[${BRed}!${BBlue}]${BGreen} - Session logfile ~>: $DGrey $session_log\n"
       ls -lahs $session_log
 
       # Location of profile to update (.zshrc, .bashrc, .bash_profile, etc)
@@ -409,8 +421,18 @@ ${BCyan}            └──╼ ")
         echo "\n\n\t\t  $cyan $(ifconfig tun0) \n"
         echo "\n\n\t\t  $cyan $(ps aux | grep $vpn_file) \n"
       }
-      echo "      ${BBlue}[${BRed}#${BBlue}] 🔶 Adding $targetIP ${targetLogNAME} to /etc/hosts ${BRed}${tryhackmeVpnIP}"
-      echo "$targetIP    ${targetLogNAME}.thm" | sudo tee -a /etc/hosts
+
+      hostsModify="$(echo "\n\t\t${BBlue}[${BYellow}?${BBlue}] 🔶 ${BGreen}Adding ${BYellow}$targetIP ${targetLogNAME} ${BGreen}to /etc/hosts? [y|Y] or [press ENTER]   ")"
+      read -p "$hostsModify" hostsMod
+      case $hostsMod in
+        y|Y|yes|YES )
+        echo "      ${BBlue}[${BRed}#${BBlue}] 🔶 ${BGreen}Adding $targetIP ${targetLogNAME} to /etc/hosts ${BRed}${tryhackmeVpnIP}"
+        echo "$targetIP    ${targetLogNAME}.thm" | sudo tee -a /etc/hosts
+          ;;
+        n|N|no|NO )
+        break
+        ;;
+      esac
 
       # Check if openvpn connection is running
       ifconfig tun0
