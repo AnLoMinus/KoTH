@@ -462,11 +462,11 @@ ${BCyan}            └──╼ ")
       echo " `whois $targetIP` " >> ${targetLogNAME}-KoTH-Log.md
       echo " " >> ${targetLogNAME}-KoTH-Log.md
       #
-      echo "\n\t\t${BGreen}### Dirb Scan Log `date`"
-      echo "### Dirb Scan Log $targetIP: " >> ${targetLogNAME}-KoTH-Log.md
-      echo " " >> ${targetLogNAME}-KoTH-Log.md
-      echo " `dirb http://$targetIP` " >> ${targetLogNAME}-KoTH-Log.md
-      echo " " >> ${targetLogNAME}-KoTH-Log.md
+      # echo "\n\t\t${BGreen}### Dirb Scan Log `date`"
+      # echo "### Dirb Scan Log $targetIP: " >> ${targetLogNAME}-KoTH-Log.md
+      # echo " " >> ${targetLogNAME}-KoTH-Log.md
+      # echo " `dirb http://$targetIP` " >> ${targetLogNAME}-KoTH-Log.md
+      # echo " " >> ${targetLogNAME}-KoTH-Log.md
       #
       echo "\n\t\t${BGreen}### Nmap Scan Log `date`"
       echo "### Nmap Scan Log $targetIP: " >> ${targetLogNAME}-KoTH-Log.md
