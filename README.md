@@ -46,12 +46,12 @@ wget https://raw.githubusercontent.com/Anlominus/KoTH/main/KoTH-Hidding; && chmo
 ---
 
 - [x] Scope
-  - [ ] 1️⃣ Asking For Username:
-  - [ ] 2️⃣ Asking For TryHackMe VPN File Location:
-  - [ ] 3️⃣ Asking Data for Reporting:
-  - [ ] 4️⃣ Asking Location For Reporting:
-  - [ ] 5️⃣ Asking For IP Target: +~> Insert it to ${box_ip}
-  - [ ] 6️⃣ Asking For Name Target: +~> Insert it to ${box_name}
+  - [x] 1️⃣ Asking For Your Username:
+  - [x] 2️⃣ Asking For TryHackMe User Name:
+  - [x] 2️⃣ Asking For TryHackMe VPN File Location:
+  - [ ] 5️⃣ Asking For IP Target: >>>  ${`ip_Target`}
+  - [ ] 6️⃣ Asking For Name Target: >>> ${`ip_Target_Name`}
+  - [ ] 4️⃣ Asking Location For Reporting: ${`export_Log_To`}
 
 ---
 
