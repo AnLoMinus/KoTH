@@ -51,7 +51,7 @@ wget https://raw.githubusercontent.com/Anlominus/KoTH/main/KoTH-Hidding; && chmo
   - [x] 2️⃣ Asking For TryHackMe VPN File Location:
   - [ ] 5️⃣ Asking For IP Target: >>>  ${`ip_Target`}
   - [ ] 6️⃣ Asking For Name Target: >>> ${`ip_Target_Name`}
-  - [ ] 4️⃣ Asking Location For Reporting: ${`export_Log_To`}
+  - [ ] 4️⃣ Asking Location For Reporting: >>> ${`export_Log_To`}
 
 ---
 
