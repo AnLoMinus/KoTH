@@ -5,7 +5,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 ###############################################
 # Name : Anlominus ~ KoTH
-# Last UPDATE : 2022 Jun 10
+# Last UPDATE : 2022 Nov 24
 # Create Date : 2022 Jun 10
 # Description: A script to protect your King Rank in KoTH
 # Skils: Best Copywriter IN the COSMOS!
@@ -136,6 +136,14 @@ while true; do
 	echo "Anlominus" > king.txt
 done
 
+# If you apply chattr to the wp-admin/ directory, no files under this directory can be changed or deleted.
+
+chattr -R +i /root/
+# After a some time passed you may forgot that which files you applied chattr in past, so you can use the lsattr command to list the directories and files that chattr is applied to. 
+# You can determine the applied files and folders with “i” mark. 
+# These are untouchables;
+
+lsattr
 # If you want to undo the operation and remove immunity from chattr applied files and folders – the parameter is sufficient (the following becomes now writable);
 chattr -i king.txt
 
