@@ -68,3 +68,12 @@ wget https://raw.githubusercontent.com/Anlominus/KoTH/main/KoTH-Hidding; && chmo
     - [x] anonsurf stop
 
 ---
+
+---
+
+<img width="1534" alt="image" src="https://user-images.githubusercontent.com/51442719/205152090-29aaceb3-5751-455f-b151-d39782c56366.png">
+
+- [Machine: Food](https://tryhackme.com/games/koth/59779)
+First Hacked: Nov 24th at 11:57
+- King Changes: 4
+- Status: Completed
